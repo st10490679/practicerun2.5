@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDC2E4"
+    android:backgroundTint="#DECEE2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtresults"
+        android:layout_width="406dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="RESULT:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+    <EditText
+        android:id="@+id/danPoints"
+        android:layout_width="320dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Enter Points earned by Dan"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/eliPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calPoints" />
+
+    <EditText
+        android:id="@+id/calPoints"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Enter Points earned by Cal"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/danPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bobPoints" />
+
+    <EditText
+        android:id="@+id/bobPoints"
+        android:layout_width="317dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter Points earned by Bob"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/calPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artPoints" />
+
+    <EditText
+        android:id="@+id/artPoints"
+        android:layout_width="320dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Enter Points earned by Art"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/bobPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="121dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtresults" />
+
+    <EditText
+        android:id="@+id/eliPoints"
+        android:layout_width="324dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Enter Points earned by Eli"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtresults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/danPoints" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="36dp"
+        android:background="#3F51B5"
+        android:backgroundTint="#DDC8E4"
+        android:text="Submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#121111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="394dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="Salesian High Basketball Team"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#222952"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/artPoints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
